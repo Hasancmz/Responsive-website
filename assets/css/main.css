@@ -26,7 +26,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100px;
+  height: 80px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -43,7 +43,7 @@ body {
 
 .header-container .header-bar {
   width: 100%;
-  height: 100px;
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,7 +59,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100px;
+  height: 80px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -122,7 +122,7 @@ body {
   background-color: #91e0d2;
   padding-top: 55px;
   overflow: hidden;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .main-container .top-section {
@@ -173,13 +173,28 @@ body {
 }
 
 .main-container .card-section .card-container svg {
+  width: 100%;
   position: absolute;
   bottom: 0;
+}
+
+.main-container .card-section .card-container svg:nth-child(1) {
+  height: 589px;
+}
+
+.main-container .card-section .card-container svg:nth-child(2) {
+  height: 444px;
+}
+
+.main-container .card-section .card-container svg:nth-child(3) {
+  height: 140px;
 }
 
 .main-container .card-section .card-container .img-container {
   position: absolute;
   bottom: 0;
+  right: 0;
+  left: 0;
   z-index: 1;
   height: 550px;
   max-width: 100%;
@@ -189,6 +204,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -302,7 +321,8 @@ body {
 .main-container .cv-template-container .svg-section svg {
   position: absolute;
   bottom: 0;
-  width: 1500px;
+  width: 100%;
+  z-index: 50;
 }
 
 .main-container .cv-template-container .template-section {
@@ -416,7 +436,7 @@ body {
 .main-container .cv-template-container .svg-bottom-section svg {
   position: absolute;
   bottom: 0;
-  width: 1500px;
+  width: 100%;
 }
 
 .main-container .cv-features-container {
@@ -531,7 +551,7 @@ body {
 .main-container .bottom-section .svg-box > svg {
   position: absolute;
   bottom: 0;
-  width: 1500px;
+  width: 100%;
 }
 
 .main-container .bottom-section .bottom-container {
@@ -678,7 +698,7 @@ body {
 .main-container .cv-prepare-container .svg-container svg {
   position: absolute;
   bottom: 0;
-  width: 1500px;
+  width: 100%;
 }
 
 .main-container .cv-prepare-container .svg-container svg:nth-child(3) {
@@ -755,6 +775,12 @@ body {
     padding-top: 40px;
     margin-top: 64px;
   }
+  .main-container .cv-template-container .svg-section svg {
+    width: 1500px;
+  }
+  .main-container .cv-template-container .svg-bottom-section svg {
+    width: 1500px;
+  }
   .main-container .top-section .cv-description {
     grid-gap: 35px;
   }
@@ -765,7 +791,13 @@ body {
     font-size: 1.3rem;
   }
   .main-container .card-section .card-container svg {
-    width: 150%;
+    width: 1500px;
+  }
+  .main-container .bottom-section .svg-box > svg {
+    width: 1500px;
+  }
+  .main-container .cv-prepare-container .svg-container svg {
+    width: 1500px;
   }
 }
 
@@ -782,7 +814,7 @@ body {
     width: 55%;
     padding: 60px 5px;
     background-color: #e8f5f2;
-    height: 92vh;
+    height: calc(100vh - 64px);
     z-index: 250;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -829,9 +861,6 @@ body {
   }
   .main-container {
     padding-top: 16px;
-  }
-  .main-container .card-section .card-container svg {
-    width: 220%;
   }
   .main-container .card-section .card-container .img-container {
     height: 450px;
@@ -887,9 +916,6 @@ body {
 }
 
 @media (max-width: 640px) {
-  .main-container .card-section .card-container svg {
-    width: 300%;
-  }
   .main-container .middle-section .title-box {
     padding: 0 5px;
   }
