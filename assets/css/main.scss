@@ -9,12 +9,13 @@
 }
 body {
   font-family: 'Lato', sans-serif;
-  overflow-x: hidden;
 }
 
 .header-container {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   max-width: 100%;
   z-index: 200;
   background-color: #91e0d2;
@@ -93,6 +94,7 @@ body {
   background-color: #91e0d2;
   padding-top: 55px;
   overflow: hidden;
+  margin-top: 100px;
   .top-section {
     max-width: 730px;
     margin: 0 auto;
@@ -562,7 +564,7 @@ body {
     }
   }
   .social-media {
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: center;
     svg {
@@ -584,6 +586,7 @@ body {
   }
   .main-container {
     padding-top: 40px;
+    margin-top: 64px;
     .top-section {
       .cv-description {
         grid-gap: 35px;
